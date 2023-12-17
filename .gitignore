@@ -5,6 +5,9 @@
 # Data
 /data
 
+#Environment
+.env
+
 # Logs
 logs
 *.log
