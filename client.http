@@ -1,4 +1,5 @@
 @baseUrl = http://localhost:4000
+@authToken = {{login.response.body.access_token}}
 
 # @name create_account
 POST {{baseUrl}}/accounts
@@ -19,4 +20,16 @@ Content-Type: application/json
 {
   "email": "john.doe@example.com",
   "password": "12345678"
+}
+
+###
+
+# @name create_question
+POST {{baseUrl}}/questions
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "title": "How to create a new question?",
+  "body": "I'm trying to create a new question using the API, but I'm not sure how to do it. Can someone help me?"
 }
