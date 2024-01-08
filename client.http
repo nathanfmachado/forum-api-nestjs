@@ -31,5 +31,5 @@ Authorization: Bearer {{authToken}}
 
 {
   "title": "How to create a new question?",
-  "body": "I'm trying to create a new question using the API, but I'm not sure how to do it. Can someone help me?"
+  "content": "I'm trying to create a new question using the API, but I'm not sure how to do it. Can someone help me?"
 }
