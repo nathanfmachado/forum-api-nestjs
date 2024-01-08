@@ -33,3 +33,10 @@ Authorization: Bearer {{authToken}}
   "title": "How to create a new question?",
   "content": "I'm trying to create a new question using the API, but I'm not sure how to do it. Can someone help me?"
 }
+
+###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
