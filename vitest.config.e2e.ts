@@ -7,6 +7,7 @@ export default defineConfig({
     include: ['**/*.e2e-spec.ts'],
     globals: true,
     root: './',
+    setupFiles: ['./test/vitest.setup-e2e.ts'],
   },
   plugins: [tsConfigPaths(), swc.vite()],
 });
